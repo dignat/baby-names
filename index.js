@@ -15,8 +15,8 @@ const allNames = [
     new BabyNames("Bela"),
 ]
 
-exports.getRandomName = () => {
+module.exports.getRandomName = () => {
     return allNames[Math.floor(Math.random() * allNames.length)];
 }
 
-exports.allNames = allNames;
+module.exports.allNames = allNames;
