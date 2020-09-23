@@ -18,8 +18,7 @@ const allNames = [
     new BabyNames("female","Bela"),
     new BabyNames("male","Belcho"),
 ]
-
-module.exports.generateName = (gender, character, length) => {
+exports.generateName = (gender, character, length) => {
     let genderMatch = [];
     for (const babyGender of allNames) {
         if(babyGender.gender === gender && (character.length > 0
@@ -31,4 +30,4 @@ module.exports.generateName = (gender, character, length) => {
     return genderMatch[Math.floor(Math.random()*genderMatch.length)];
 }
 
-module.exports.allNames = allNames;
+exports.allNames = allNames;
