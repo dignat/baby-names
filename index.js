@@ -30,3 +30,5 @@ module.exports.generateName = (gender, character, length) => {
     }
     return genderMatch[Math.floor(Math.random()*genderMatch.length)];
 }
+
+module.exports.allNames = allNames;
