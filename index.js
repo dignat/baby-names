@@ -27,7 +27,7 @@ exports.generateName = (gender, character, length) => {
             genderMatch.push(babyGender);
         }
     }
-    return genderMatch[Math.floor(Math.random()*genderMatch.length)].character;
+    return genderMatch[Math.floor(Math.random()*genderMatch.length)];
 }
 
 exports.allNames = allNames;
