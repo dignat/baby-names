@@ -27,7 +27,7 @@ exports.generateName = (gender, character, length) => {
             genderMatch.push(babyGender);
         }
     }
-    return genderMatch.length > 0 ? genderMatch[Math.floor(Math.random()*genderMatch.length)] : "No baby name with this criteria";
+    return genderMatch.length > 0 ? genderMatch[Math.floor(Math.random()*genderMatch.length)] : new BabyNames("unknown","Unknown");
 }
 
 exports.allNames = allNames;
